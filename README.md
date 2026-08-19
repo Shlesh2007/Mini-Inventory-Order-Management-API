@@ -64,7 +64,34 @@ When an order is cancelled:
 JWT authentication is used for API authentication.
 
 ---
-
+## Setup
+```text
+User Login
+    ↓
+JWT Authentication
+    ↓
+View Available Products
+    ↓
+Create / Select Customer
+    ↓
+Create Order
+    ↓
+Select Products + Quantity
+    ↓
+Backend Checks Stock
+    ↓
+Backend Gets Product Price
+    ↓
+Calculate Subtotal
+    ↓
+Calculate Order Total
+    ↓
+Create Order & Order Items
+    ↓
+Decrease Product Stock
+    ↓
+Order Created
+```
 ## Project Flow
 
 The basic flow of the application is:
@@ -95,3 +122,4 @@ Create Order & Order Items
 Decrease Product Stock
     ↓
 Order Created
+
