@@ -14,7 +14,36 @@ This project was created as part of a technical internship assignment.
 - HTML Browsable API provided by DRF
 
 ## Features
+## Project Flow
 
+The basic flow of the application is:
+
+```text
+User Login
+    ↓
+JWT Authentication
+    ↓
+View Available Products
+    ↓
+Create / Select Customer
+    ↓
+Create Order
+    ↓
+Select Products + Quantity
+    ↓
+Backend Checks Stock
+    ↓
+Backend Gets Product Price
+    ↓
+Calculate Subtotal
+    ↓
+Calculate Order Total
+    ↓
+Create Order & Order Items
+    ↓
+Decrease Product Stock
+    ↓
+Order Created
 ### Products
 - Create product
 - List products
