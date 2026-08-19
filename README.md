@@ -13,6 +13,8 @@ This project was created as part of a technical internship assignment.
 - SQLite
 - HTML Browsable API provided by DRF
 
+---
+
 ## Features
 
 ### Products
