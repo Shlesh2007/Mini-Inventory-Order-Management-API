@@ -18,7 +18,6 @@ This project was created as part of a technical internship assignment.
 
 The basic flow of the application is:
 
-```text
 User Login
     ↓
 JWT Authentication
@@ -88,7 +87,6 @@ JWT authentication is used for API authentication.
 
 ## Project Structure
 
-```text
 inventory_management/
 │
 ├── manage.py
