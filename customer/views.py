@@ -74,8 +74,7 @@ class OrderViewSet(
 
     serializer_class = OrderSerializer
 
-    # Assignment requires:
-    # Create, List, View and Update
+    
     http_method_names = [
         "get",
         "post",

@@ -13,9 +13,12 @@ This project was created as part of a technical internship assignment.
 - SQLite
 - HTML Browsable API provided by DRF
 
+---
+
 ## Features
 
 ### Products
+
 - Create product
 - List products
 - View product details
@@ -25,10 +28,12 @@ This project was created as part of a technical internship assignment.
 - Unique SKU validation
 
 ### Customers
+
 - Create customer
 - List customers
 
 ### Orders
+
 - Create order
 - List orders
 - View order details
@@ -36,6 +41,7 @@ This project was created as part of a technical internship assignment.
 - Cancel order
 
 ### Order Items
+
 - Multiple products can be added to one order
 - Quantity is stored for each product
 - Product price is taken from the database
@@ -57,27 +63,63 @@ When an order is cancelled:
 
 JWT authentication is used for API authentication.
 
-## Project Structure
+---
+## Setup
+```text
+User Login
+    ↓
+JWT Authentication
+    ↓
+View Available Products
+    ↓
+Create / Select Customer
+    ↓
+Create Order
+    ↓
+Select Products + Quantity
+    ↓
+Backend Checks Stock
+    ↓
+Backend Gets Product Price
+    ↓
+Calculate Subtotal
+    ↓
+Calculate Order Total
+    ↓
+Create Order & Order Items
+    ↓
+Decrease Product Stock
+    ↓
+Order Created
+```
+## Project Flow
+
+The basic flow of the application is:
 
 ```text
-inventory_management/
-│
-├── manage.py
-├── requirements.txt
-├── README.md
-├── DOCUMENTATION.md
-│
-├── inventory_managemment/
-│   ├── settings.py
-│   ├── urls.py
-│   ├── asgi.py
-│   └── wsgi.py
-│
-└── customer/
-    ├── models.py
-    ├── serializers.py
-    ├── views.py
-    ├── urls.py
-    ├── tests.py
-    ├── admin.py
-    └── migrations/
+User Login
+    ↓
+JWT Authentication
+    ↓
+View Available Products
+    ↓
+Create / Select Customer
+    ↓
+Create Order
+    ↓
+Select Products + Quantity
+    ↓
+Backend Checks Stock
+    ↓
+Backend Gets Product Price
+    ↓
+Calculate Subtotal
+    ↓
+Calculate Order Total
+    ↓
+Create Order & Order Items
+    ↓
+Decrease Product Stock
+    ↓
+Order Created
+
